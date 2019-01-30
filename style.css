@@ -1,47 +1,121 @@
-body{
-    
+body {
+    background-color: rgba(224, 222, 222, 0.548);
 }
-.main{
+
+.main {
     display: grid;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: auto auto auto;
-    grid-template-areas:  "a1 container a2"
-                "a3 reseau a4"
-                "a5 movies a6"; 
-    background: lightgrey;    
-    text-align: justify;    
+    grid-template-areas: "a1 container a2""a3 reseau a4""a5 movies a6";
+    text-align: justify;
+    font-family: 'Montserrat',sans-serif;
 }
-.container{
-    grid-area: container;
-    /* flex-direction: column;
-    justify-content: center; */
-    background: white;
-    padding: 4%;
-    
-}
-.movies{
-    grid-area: movies;
-    background: white;
-    padding: 4%;
-    
 
+/*------------------Premier block----------------------*/
+.container {
+    margin: 4%;
+    padding: 4%;
+    border-radius: 2%;
+    text-align: justify;
+    color: #8f8e8e;
+    background-color: white;
+    box-shadow: 2px 2px 6px gray;
+    grid-area: container;    
 }
-.contenu{
+
+.conteneurPhoto {
     display: flex;
-    align-self: center;
-    
-}
-.reseau{
-    grid-area: reseau;
-    background: white;
+    justify-content: center;
 }
 
-h1{
+.photo {
+    width: 140px;
+    height: 140px;
+    border: 3px solid lightgray;
+    border-radius: 50%;
+}
+
+.buttonWiki {
+    padding: 15px 25px;
+    margin: 30px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    background-color: rgb(231, 45, 45);
+    border-radius: 8px;
+}
+ 
+.buttonWiki:hover {
+    color: black;
+}
+/*------------------Deuxième block----------------------*/
+
+.reseau {
+    margin: 4%;
+    padding: 4%;
+    border-radius: 8px;
+    text-align: center;
+    color: #8f8e8e;
+    background: white;
+    box-shadow: 2px 2px 6px gray;
+    grid-area: reseau;    
+}
+.reseau {
+    display: flex;
+    align-content: center;
+    justify-content: center;   
+    font-size: 1em;
+}
+
+i {
+    transform: scale(1.1);
+    color: #8f8e8e;
+    line-height: 2 !important;
+}
+
+/*------------------Troisième block----------------------*/
+.movies {
+    margin: 4%;
+    padding: 4%;
+    border-radius: 8px;
+    text-align: justify;
+    color: #8f8e8e;
+    background: white;
+    box-shadow: 2px 2px 6px gray;
+    grid-area: movies;
+}
+
+.contenu {
+    width: 360px;
+}
+
+.films {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15%;
+}
+
+.img {
+    width: 100px;
+}
+
+/*------------------Texte----------------------*/
+
+h1 {
+    text-align: center;
+    color: rgb(231, 45, 45);
+}
+
+h2 {
     text-align: center;
 }
-h2{
+
+h3 {
     text-align: center;
 }
-h3{
-    text-align: center;
+p {
+    line-height: 160%;
 }
