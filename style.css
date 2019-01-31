@@ -96,6 +96,14 @@ p {
 	font-size: 1em;
 }
 
+.nom {
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif !important;
+	margin-top: 17%;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+} 
+
 .link {
 	margin: 5px;
 	padding: 1em;
