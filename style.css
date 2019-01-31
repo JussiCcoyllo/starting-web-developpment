@@ -9,9 +9,25 @@ body {
     grid-template-areas: "a1 container a2""a3 reseau a4""a5 movies a6";
     text-align: justify;
     font-family: 'Montserrat',sans-serif;
+    min-width: 500px;
+    max-width: 650px;
+
+}
+@media only screen and (max-width:650px) {
+    .films {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
+@media only screen and (max-width:650px) {
+    .contenu {
+        max-width: 100%;
+    }
+}
+ 
 /*------------------Premier block----------------------*/
+
 .container {
     margin: 2%;
     padding: 4%;
@@ -50,17 +66,18 @@ body {
     justify-content: center;
     background-color: rgb(231, 45, 45);
     border-radius: 8px;
-    width: 150px;
+    width: 34%;
 }
  
 .buttonWiki:hover {
     color: black;
 }
+
 /*------------------Deuxième block----------------------*/
 
 .reseau {
     margin: 2%;
-    padding: 4%;
+    padding: 8%;
     border-radius: 8px;
     text-align: center;
     color: #8f8e8e;
@@ -69,22 +86,21 @@ body {
     grid-area: reseau;    
     display: flex;
     align-content: center;
-    justify-content: center;   
+    justify-content: space-around;   
     font-size: 1em;
 }
 
 .link {
     margin: 5px;
-    
-
+ 
 }
 .fab {
     text-decoration: none;
     color: #8f8e8e;
 }
 
-
 /*------------------Troisième block----------------------*/
+
 .movies {
     margin: 2%;
     padding: 4%;
@@ -124,6 +140,7 @@ h2 {
 h3 {
     text-align: center;
 }
+
 p {
     line-height: 160%;
 }
